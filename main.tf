@@ -22,7 +22,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0db6c6238a40c0681"
+  ami           = "ami-0d4c664d2c7345cf1"
   instance_type = "t2.micro"
 
   user_data_base64 = base64encode(local.user_data)
