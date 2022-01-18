@@ -35,7 +35,7 @@ resource "aws_instance" "app_server" {
 }
 
 resource "aws_key_pair" "terraform_pub_key" {
-  public_key = file("~/.ssh/surfkey.pub")
+  public_key = file("~/.ssh/<keypairname>.pub")
 }
 
 variable "instance_name" {
